@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: poppins;
+    max-height: 100vh;
+    
+}
+body{
+    background-image: url(./assets/pexels-maxyne-barcel-10402282\ 1.png) ;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.582);
+    z-index: 5;
+    background-blend-mode: color;
+    max-height: 100vh;
+    /* min-height: 100vh; */
+    background-size: cover;
+
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2vh;
+
+}
+.logo{
+    height:8% ;
+    width: 8%;
+}
+
+.logo  img{
+    height: 100%;
+    width: 100%;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li{
+    list-style: none;
+    padding: 4px;
+    margin: 20px;
+   
+}
+
+.menu ul li a{
+    color: #ffc233;
+    text-decoration: none;
+}
+
+.menu ul li a:hover{
+    color: white;
+}
+
+.order  a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 30px;
+    margin: 5px;
+    justify-content: center;
+    text-align: center;
+    background-color: #cc3a3a;
+    border-style: none;
+}
+
+.order  a:hover{
+    background-color: white;
+    color: #cc3a3a;
+    transition-duration: 500ms;
+
+}
+main{
+    height: 45vh;
+    
+}
+
+main ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main ul li{
+    list-style: none;
+}
+
+main ul li p{
+    font-size:74px;
+    margin-top: 10%;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-weight:900;
+    color: #ffc233;
+    padding: 20px;
+
+
+}
+
+
+main ul li  a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 30px;
+    margin: 5px;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(223, 37, 37);
+    border-style: none;
+    
+}
+main ul li  a:hover{
+    background-color: white;
+    color: #cc3a3a;
+    transition-duration: 500ms;
+}
+
+footer{
+    display: flex;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+}
