@@ -1,0 +1,173 @@
+/*  media query applied at width:580px */
+
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  background-color: rgb(18, 5, 49);
+  font-family: "Poppins", sans-serif;
+}
+
+
+@media(max-width:580px){
+  body{
+    font-size: 22px;
+    width: 100vw;
+  }
+  .section{
+    width: 100vw;
+  }
+  nav{
+    display: none;
+  }
+  nav ul li a{
+    display: none;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li{
+    display: none;
+  }
+  .mediadiv {
+    background:url("./assets/hambrger.png");
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    margin: 10px 0px 0px 10px ;
+    width: 40px;
+    height: 40px;
+  }
+  main{
+    flex-direction: column;
+  }
+  .card{
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
+
+nav ul {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 10px;
+}
+
+nav li {
+  padding: 5px;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  padding: 2px 8px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  padding: 2px 8px;
+  border-radius: 15px;
+  background-color: rgb(89, 37, 173);
+}
+nav li:first-child {
+  padding: 2px 8px;
+  border-radius: 15px;
+  background-color: rgb(89, 37, 173);
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  margin: 10px;
+}
+
+.left p img {
+  height: 24px;
+  width: 24px;
+}
+
+.left p {
+  color: white;
+  font-weight: 600;
+}
+
+.left p span1 {
+  font-size: 28px;
+}
+
+.left p span2 {
+  color: rgb(201, 167, 56);
+}
+
+.right {
+  margin: 10px;
+}
+.right img {
+  height: 300px;
+  width: 300px;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80vh;
+}
+
+.project h1 {
+  color: white;
+  border-bottom: 5px solid purple;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card img {
+  height: 220px;
+  width: 220px;
+  margin: 5px;
+}
+.card figcaption {
+  color: white;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer h1 {
+  color: white;
+  border-bottom: 5px solid purple;
+}
+.socialmedia {
+  display: flex;
+}
+.socialmedia img {
+  padding: 25px 10px;
+  height: 30px;
+  width: 30px;
+}
+
+.socialmedia img:hover {
+  cursor: pointer;
+}
