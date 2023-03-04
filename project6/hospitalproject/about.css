@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #f0f4f5;
+  font-family: "Work Sans", sans-serif;
+  height: 100vh;
+  width: 100vw;
+}
+header {
+  height: 14vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  height: fit-content;
+  margin-left: 55px;
+}
+.logo img {
+  height: 45px;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 45vw;
+}
+nav ul li {
+  list-style: none;
+  margin: 0px 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  font-weight: 600;
+}
+
+section {
+  height: 84vh;
+
+  margin: 0%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  height: 55%;
+  width: 60%;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.heading {
+  color: #20bc7e;
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.main p:nth-child(2) {
+  font-size: 17px;
+}
+
+.features {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.box {
+  width: 12vw;
+  height: 12vh;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.801);
+  text-align: center;
+}
+.box p {
+  line-height: 34px;
+
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.box p span {
+  color: #20bc7e;
+
+  font-size: 24px;
+  font-weight: 800;
+}

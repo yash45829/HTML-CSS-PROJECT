@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    background-color: #f0f4f5;
+    font-family: "Work Sans", sans-serif;
+    height: 100vh;
+    /* font-stretch: narrower; */
+  
+  }
+  header {
+    height: 14vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    height: fit-content;
+    margin-left: 55px;
+  }
+  .logo img {
+    height: 45px;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45vw;
+  }
+  nav ul li {
+    list-style: none;
+    margin: 0px 30px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+    text-shadow: 1px black;
+  }
+  section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  form{
+    position: relative;
+    top: 45px;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid green; */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.753);
+  }
+  form p{
+    text-align: center;
+    padding: 5px 0px ;
+    font-size: 28px;
+    font-weight: 600;
+  }
+  form input{
+    margin: 5px;
+    margin-bottom: 12px;
+    padding-left: 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: "Work Sans", sans-serif;
+    border: none;
+    border-radius: 8px;
+    outline-style: none;
+
+  }
+ 
+
+  form label{
+    margin: 5px;
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+  form textarea{
+    margin: 5px;
+    resize: none;
+    padding-left: 12px;
+    padding: 5px;
+    font-size: 15px;
+    font-family: "Work Sans";
+    border-radius: 8px ;
+    border: none;
+    outline-style: none;
+
+
+  }
+
+
+  .message{
+    height: 100px;
+  }
+  .submit{
+    border-radius: 12px;
+    height: 45px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #20bc7e;
+  }
+  .submit:hover{
+    cursor: pointer;
+  }
