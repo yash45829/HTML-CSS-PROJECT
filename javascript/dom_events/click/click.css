@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: black; */
+}
+header{
+ text-align: center;
+}
+header ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+header ul li{
+    margin: 2vw;
+    font-size: 1.25em;
+    list-style: none;
+}
+header ul li:hover{
+    cursor: pointer;
+}
+#btn{
+   border-radius: 5px;
+   background-color: rgb(60, 214, 235);
+   padding: 2px 5px ;
+}
+.clr{
+    text-decoration: none;
+    /* font-size: 1.25em; */
+ /* color: red; */
+}
+main{
+    margin: 10vh 20vh 0 5vh;
+    /* color: #524e4e; */
+}
+main p {
+    font-size: 1.5em;
+}

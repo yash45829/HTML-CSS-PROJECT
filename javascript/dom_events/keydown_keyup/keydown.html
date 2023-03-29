@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keydown_proj</title>
+    <!-- font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;    700;800;900&family=Work+Sans:wght@400;500;600;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css  -->
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        margin: 1vh;
+      }
+      .input {
+        padding: 4vh;
+        color: white;
+        font-size: 2em;
+        border-radius: 1vh;
+        background: rgb(170, 34, 158);
+        font-family: "Poppins", sans-serif;
+        margin-bottom: 5vh;
+        border-style: none;
+        overflow-x: scroll;
+
+        background: linear-gradient(
+          90deg,
+          rgba(170, 34, 158, 1) 0%,
+          rgba(33, 54, 168, 1) 100%
+        );
+      }
+      .box {
+        height: 20vh;
+        width: 40vw;
+        padding: 5vh;
+        font-size: 1.45em;
+        border: 1px solid black;
+        border-radius: 2vh;
+        overflow-wrap: break-word;
+        overflow: auto;
+      }
+      ::placeholder {
+        color: rgb(238, 230, 230);
+      }
+    </style>
+
+    <!-- ***************************-->
+  </head>
+  <body>
+    <!-- container contains input box and output box -->
+    <div class="container">
+      <div>
+        <input
+          class="input"
+          type="text"
+          name=""
+          placeholder="Type Here ...(keydown)"
+          id=""
+        />
+      </div>
+   
+
+      <!-- keydown box  -->
+      <div class="box"> 
+        Hello, These are your entered keys. <br />
+        In this container, the keys you press will appear .
+      </div>
+    </div>
+
+    <!-- container contains input box and output box -->
+
+    <div class="container">
+      <div>
+        <input
+          class="input"
+          type="text"
+          name=""
+          placeholder="Type Here ...(keyup)"
+          id=""
+          onkeyup="(e)=>{keyup()}"
+        />
+      </div>
+    <!-- keyup box  -->
+      <div class="box">
+        Hello, These are your entered keys. <br />
+        In this container, the keys you release after press will appear .
+      </div>
+    </div>
+    <script>
+      // for input one
+      //keydown
+
+      let input = document.getElementsByClassName("input");
+      let box = document.getElementsByClassName("box");
+
+      input[0].addEventListener("click", clickedone);
+      input[0].addEventListener("keydown", keydown);
+
+      let eventOne = false;
+      function clickedone() {
+        if (eventOne == false) {
+          box[0].textContent = ``;
+          eventOne = true;
+        } else {
+        }
+      }
+
+      function keydown(e) {
+        box[0].textContent = `${box[0].textContent}${e.key}`;
+      }
+
+      // for input two
+      // keyup
+
+      input[1].addEventListener("click", clickedtwo);
+      input[1].addEventListener("keyup", keyup);
+
+      let eventTwo = false;
+      function clickedtwo() {
+        if (eventTwo == false) {
+          box[1].textContent = ``;
+          eventTwo = true;
+        } else {
+        }
+      }
+
+      function keyup(e) {
+        box[1].textContent = `${box[1].textContent}${e.key}`;
+      }
+    </script>
+  </body>
+</html>

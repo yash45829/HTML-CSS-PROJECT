@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: aquamarine;
+}
+.container{
+    height: 100vh;
+    
+    /* margin: 40vh 40vw; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+}
+.box{
+    border: 1px solid black;
+    padding: 2vh 5vw;
+    font-size: 1.5em ;
+}
