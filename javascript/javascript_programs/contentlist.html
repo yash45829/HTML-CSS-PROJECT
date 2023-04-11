@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content List</title>
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Work+Sans:wght@400;500;600;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ************************************************ -->
+    <!-- css -->
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      ol li {
+        font-size: 1.5em;
+      }
+      button {
+        padding: 4px 6px;
+        font-size: 1.25em;
+        border-radius: 4px;
+        margin: 40px 20px;
+        background-color: skyblue;
+        border: none;
+        user-select: none;
+      }
+      button:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 6px black;
+        border: none;
+      }
+    </style>
+
+    <!-- ************************************************ -->
+
+  </head>
+  <body>
+    <header>
+      <h1>Dynamically Adding List Items to an Ordered List</h1>
+    </header>
+    <main>
+      <!-- list item  -->
+      <ol></ol>
+      <!-- add button  -->
+      <button class="btn">Add Item</button>
+    </main>
+
+    <!-- ************************************************ -->
+
+<!-- javascript  -->
+    <script>
+      let btn = document.getElementsByClassName("btn");
+      let ol = document.getElementsByTagName("ol");
+      // item list array 
+      let items = [
+        "HTML and Semantics",
+        "Starting with CSS",
+        "Working Template",
+        "Mobile responsive webpages",
+        "Grid and Flex-box in CSS",
+        "Projects using HTML & CSS",
+        "Version Control and Git",
+        "Getting Started with JavaScript",
+        "Advance JavaScript",
+        "Working with DOM",
+        "Making Projects using HTML, CSS and JavaScript",
+        "Understanding Fundamental of Computer Science",
+        "Getting Started with Database",
+        "Understanding the Database",
+        "Starting with NodeJS and Express",
+        "Understanding React and its Fundamentals",
+        "Understanding Hooks and Routers",
+        "Starting and Completing Full Fledge Projects",
+      ];
+      btn[0].addEventListener("click", add);
+
+      let i = 0;
+      function add() {
+        if (i < items.length) {
+          ol[0].innerHTML = ol[0].innerHTML + `<li>  ${items[i]}</li>`;
+          i++;
+        } else {
+          ol[0].insertAdjacentHTML(
+            "afterend",
+            "<h2>All items have been added</h2>"
+          );
+          btn[0].removeEventListener("click", add);
+        }
+      }
+    </script>
+  </body>
+</html>

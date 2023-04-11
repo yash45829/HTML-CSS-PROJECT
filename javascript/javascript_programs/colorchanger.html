@@ -1,0 +1,55 @@
+<!-- making a page with color changing background on clicking button  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Changer</title>
+    <!-- css  -->
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+        button{
+        padding: 9px 12px;
+        font-size: 1.25em;
+        font-weight: 600;
+        border-radius: 4px;
+        margin: 40px 20px;
+        background-color: skyblue;
+        border: none;
+        user-select: none;
+        }
+        button:hover{
+        cursor: pointer;
+        background-color: rgb(117, 185, 212);
+        box-shadow: 0px 0px 8px rgb(218, 213, 213);
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">Color Changer</button>
+
+    <!-- javascript  -->
+    <script>
+        //math.random is used to select color from array randomly
+        let body = document.body ; 
+        let btn = document.getElementsByClassName("btn");
+        btn[0].addEventListener("click" , change);
+        //array of colors
+        let colorArray = ["#50FA2A","#2AFAED","#5DA9F5","#C367F1","#F167EF","#F7F446","#E87474","#DAF60D"];
+       
+        function change(){
+            let i = Math.random()
+            let k =  Math.round(i* (colorArray.length - 1))
+            body.style.backgroundColor = `${colorArray[k]}`
+        }
+
+    </script>
+</body>
+</html>

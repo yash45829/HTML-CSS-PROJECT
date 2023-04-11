@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    padding: 5vh 40%;
+    font-family: "Poppins", sans-serif;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+#todo{
+    width: 30vw;
+    padding: 5px;
+ border-radius: 4px;
+ background-color: skyblue;
+ font-size: 1.20em;
+border: none;
+
+}
+#todo:focus{
+ box-shadow: 0px 0px 6px black; 
+ outline: none;
+}
+/* .todos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+
+} */
+/* .remove{
+    padding: 4px 6px;
+    font-size: 1.25em;
+    border-radius: 4px;
+    margin: 40px 0px ;
+    background-color: skyblue;
+    border: none;
+    user-select: none;
+} */
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px ;
+    column-gap: 20px;
+ 
+}
+.box{
+ padding: 5px 6px;
+ font-size: 1.25em;
+ border-radius: 4px;
+ margin: 8px 0px ;
+ width: 30vw;
+ background-color: skyblue;
+ border: none;
+ user-select: none;
+}
+button ,.remove{
+ padding: 4px 6px;
+ font-size: 1.25em;
+ border-radius: 4px;
+ margin: 40px 0px ;
+ background-color: skyblue;
+ border: none;
+ user-select: none;
+ }
+
+ button:hover {
+ cursor: pointer;
+ box-shadow: 0px 0px 6px black;
+ border: none;
+     
+}

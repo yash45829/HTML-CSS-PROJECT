@@ -1,0 +1,57 @@
+<!-- finding words in paragraph with characters greater than or equal to 8 and highlighting them with bakground color 'yellow' -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text HighLighting</title>
+</head>
+<!-- style -->
+<style>
+      main {
+        margin: 0;
+        margin-top: 12vh;
+        padding: 0vh 20vw;
+        font-size: 1.25em;
+        text-align: start;
+        line-height: 1.4em;
+        word-spacing: 0.7em;
+      }
+      .color{
+        background-color: yellow;
+      }
+</style>
+<!-- html code  -->
+<body>
+    <!-- heading  -->
+    <header>
+        <h1>Text HighLighting</h1>
+    </header>
+    <!-- paragraph  -->
+    <main>
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat minima nesciunt praesentium nemo repudiandae, quisquam animi ipsa! Praesentium quos nemo, minus tempore earum quae. Eligendi commodi maiores aspernatur reiciendis voluptate tempora? Eaque reiciendis voluptatem iure optio dolor autem fugit animi earum eveniet molestiae illo officiis, accusamus nostrum quasi, doloremque sint dolorum vel? Quia pariatur maxime, ad minus at debitis perspiciatis veritatis ipsam tempore iusto magnam rerum magni illum quas vitae. Impedit accusamus velit, ab quis ullam, rem laudantium consectetur totam nesciunt at cum blanditiis commodi ipsam culpa autem rerum! Veritatis, commodi eius at maxime dicta fugit sunt in assumenda cum perspiciatis libero praesentium odit unde quaerat enim qui eligendi, quasi nihil minus rerum, nam repellat sint ea eos. Velit perspiciatis iste aperiam voluptas repellendus ducimus voluptatibus reprehenderit, eligendi voluptates blanditiis earum in soluta eum vel voluptate quae, beatae aut excepturi maiores sint doloribus ex fugiat aliquam? Sequi rerum illum blanditiis necessitatibus possimus unde debitis dolorem laborum tempore obcaecati accusantium, libero mollitia nam. Impedit facilis consectetur quidem fugit velit fugiat aliquid expedita accusantium eum beatae, porro aspernatur repudiandae dolorem mollitia harum dicta, consequuntur quisquam libero? Cum quidem qui dignissimos minus, dicta voluptatum alias, laboriosam soluta, temporibus repellat quos perferendis quo? Corporis in, fugiat, deleniti iusto impedit doloribus optio excepturi, nostrum fuga ut magni? Rerum, ut. Harum vel exercitationem excepturi. Eaque sapiente vero nesciunt expedita cum saepe voluptatem odio alias hic corrupti ea soluta distinctio inventore tempore nulla quam qui blanditiis, amet, commodi rem perspiciatis! Repellat eveniet unde minima atque placeat. Iste hic voluptates maxime architecto quaerat aliquid recusandae amet? Ut soluta in quam minus eum vero totam sed sint perspiciatis ratione culpa delectus, debitis minima nesciunt aperiam dolorem repellendus nemo aspernatur perferendis quaerat incidunt nostrum, officia porro voluptatibus. Quisquam, consequatur amet. Labore dolores culpa blanditiis ad aperiam eaque consequuntur doloribus deserunt laudantium facilis. Obcaecati et omnis, tenetur perferendis quod tempora magnam consectetur sed. Possimus accusamus ex laudantium voluptatibus placeat obcaecati, laborum nulla facilis praesentium, facere officiis fugit iste libero. Eum exercitationem mollitia recusandae voluptatibus dolorem? Doloremque nam inventore consequatur vel ipsum sapiente repellendus, veritatis ratione, expedita error dolore corporis ab, officia porro provident tempora! Saepe voluptates repellat repudiandae cum excepturi, eligendi voluptatum nisi adipisci corrupti maxime totam natus dignissimos deleniti quis autem veritatis animi repellendus iure porro, consequuntur accusamus esse sit! Saepe, veniam. Veritatis in ut distinctio maxime officia ex similique aspernatur explicabo dicta. Iste esse aperiam maiores blanditiis reprehenderit? Laboriosam quisquam ab suscipit, aliquam atque voluptas quibusdam non quaerat porro veniam? Error ducimus, maiores nesciunt dolores iusto praesentium beatae repudiandae qui, quas dolorem dolore corrupti ipsa suscipit recusandae consectetur laborum. Maxime debitis ipsa quisquam nihil aliquid dignissimos illum ipsam voluptatum voluptatibus sapiente, enim culpa repellendus at quasi iusto, eaque, facilis ab vel magnam. Provident eligendi pariatur debitis cupiditate consequuntur et odio mollitia, iste modi facilis sunt reprehenderit. Quisquam, eos rerum dolorem debitis, modi perferendis voluptatem alias quod quidem autem dignissimos enim dolorum exercitationem numquam odit, eius porro aperiam. Sit, vero. Pariatur voluptatem, culpa sed ut commodi corporis est at ducimus.</p>
+    </main>
+    <!-- javascript  -->
+    <script>
+     let para = document.getElementsByClassName("para")
+     let box = document.getElementsByTagName("main")
+    //  word is array of all words present in para 
+     word =  para[0].innerHTML.split(' ')
+
+    //logic
+    // first of all making p tag empty 
+    // then rewriting paragraph by appling condition that if word is with more than or equal to 8 characters than put it in span tag  otherwise put it without span tag 
+
+     para[0].innerHTML = "";
+
+     for(let i = 0 ; i < word.length ; i++) {
+     if(word[i].length >= 8){
+         para[0].innerHTML = `${para[0].innerHTML }  <span class = "color">${word[i]}</span> `
+     }else{
+        para[0].innerHTML = ` ${para[0].innerHTML + word[i] } `
+     };
+     } 
+    </script>
+</body>
+</html>
