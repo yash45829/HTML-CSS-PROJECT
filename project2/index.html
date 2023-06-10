@@ -14,6 +14,14 @@
       href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@400;900&family=Rowdies:wght@700&display=swap"
       rel="stylesheet"
     />
+     <!-- font symbols -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+   />
   </head>
   <body>
     <header>
@@ -35,8 +43,25 @@
         </div>
         <!-- contact button  -->
         <div class="contact"><a href="">Contact Us</a></div>
+            <!-- mobile responsive -->
+      <div id="humberger" class="humberger">
+        <i id="symbol" class="fa-solid fa-bars"></i>
+        <!-- <i class="fa-solid fa-xmark"></i> -->
+      </div>
       </nav>
     </header>
+
+
+    <div id="menu" class="smallmenu">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a href="">Pricing</a></li>
+        <li class="res_contact"><a href="">Contact Us</a></li>
+      </ul>
+    </div>
 
     <!-- main section  -->
     <main>
@@ -61,5 +86,22 @@
         <img src="./assets/Header Illustration.png" alt="Illustration image" />
       </div>
     </main>
+     <!-- script  -->
+     <script>
+      // navbar responsive
+      const humberger = document.getElementById("humberger");
+      const menu = document.getElementById("menu");
+      const symbol = document.getElementById("symbol");
+
+      humberger.addEventListener("click", () => {
+        if (symbol.classList[1] == "fa-bars") {
+          symbol.classList = "fa-solid fa-xmark";
+          menu.style.left = `0px`;
+        } else {
+          symbol.classList = "fa-solid fa-bars";
+          menu.style.left = `-500px`;
+        }
+      });
+    </script>
   </body>
 </html>

@@ -1,52 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project1</title>
-    <link rel="stylesheet" href="./style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resturant Webpage</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-    href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@400;900&family=Rowdies:wght@700&display=swap"
-    rel="stylesheet"
-  />
-  
-</head>
+      href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@400;900&family=Rowdies:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font symbols -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
+  <body>
+    <!-- navbar  -->
     <header>
-        <div class="logo"><img src="./assets/white-logo.png"alt=""></div>
-        <div class="menu">
-            <ul>
-                <li><a href="">Our Menu</a></li>
-                <li><a href="">Maps</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">About</a></li>
-            </ul>
-        </div>
-         <div class="order">
-           <a href="">Order</a>
-        </div>
-    </header>
-    <main>
+      <div class="logo"><img src="./assets/white-logo.png" alt="" /></div>
+      <div class="menu">
         <ul>
-            <li>
-                <p>
-                    A Resturant That <br> Only Serves <br> Delicious Food 
-                </p>
-            </li>
-            <li>
-                <a href="">Read Our Menu</a>
-            </li>
+          <li><a href="">Our Menu</a></li>
+          <li><a href="">Maps</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">About</a></li>
         </ul>
+      </div>
+      <!-- button  -->
+      <div class="order">
+        <a href="">Order</a>
+      </div>
+
+      <!-- mobile responsive -->
+      <div id="humberger" class="humberger">
+        <i id="symbol" class="fa-solid fa-bars"></i>
+        <!-- <i class="fa-solid fa-xmark"></i> -->
+      </div>
+    </header>
+
+    <div id="menu" class="smallmenu">
+      <ul>
+        <li>
+          <a href=""><img src="./assets/white-logo.png" alt="" srcset="" /></a>
+        </li>
+        <li><a href="" class="logo">Location</a></li>
+        <li><a href="">Blogs</a></li>
+        <li><a href="">Testimonials</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div>
+    <!-- hero section  -->
+    <main>
+      <ul>
+        <li>
+          <p>
+            A Resturant That <br />
+            Only Serves <br />
+            Delicious Food
+          </p>
+        </li>
+        <li>
+          <!-- button  -->
+          <a href="">Read Our Menu</a>
+        </li>
+      </ul>
     </main>
     <footer>
-        <img src="./assets/scrool.png" alt="">
+      <img src="./assets/scrool.png" alt="" />
     </footer>
-</body>
+    <!-- script  -->
+    <script>
+      // navbar responsive
+      const humberger = document.getElementById("humberger");
+      const menu = document.getElementById("menu");
+      const symbol = document.getElementById("symbol");
 
+      humberger.addEventListener("click", () => {
+        if (symbol.classList[1] == "fa-bars") {
+          symbol.classList = "fa-solid fa-xmark";
+          menu.style.top = `0px`;
+        } else {
+          symbol.classList = "fa-solid fa-bars";
+          menu.style.top = `-500px`;
+        }
+      });
+    </script>
+  </body>
 </html>

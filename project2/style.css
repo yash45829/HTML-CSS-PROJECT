@@ -5,7 +5,7 @@
 
 /* body  */
 body {
-  background-color:#ffffff;
+  background-color: #ffffff;
   font-family: "Poppins", sans-serif;
 }
 
@@ -24,7 +24,7 @@ nav {
   height: 6vh;
   margin-bottom: 0px;
 }
-
+/* menu  start */
 .menu {
   position: relative;
   right: 18vw;
@@ -35,41 +35,53 @@ nav {
   display: flex;
   width: 20vw;
 }
+.smallmenu ul {
+  display: flex;
+  flex-direction: column;
+}
 
-.menu ul li {
+.menu ul li,
+.smallmenu ul li {
   list-style: none;
   margin: 10px;
   padding: 5px;
 }
-.menu ul li a {
+.menu ul li a,
+.smallmenu ul li a {
   text-decoration: none;
   font-weight: 400;
 }
 
-.menu ul li a:hover {
-  color:rgb(45, 45, 155);
+.menu ul li a:hover,
+.smallmenu ul li a:hover {
+  color: rgb(11, 18, 114);
 }
 
-main {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
 
-.contact a {
+/* contact button and res_contact button  */
+.contact a,
+.res_contact a {
   background-color: rgb(98, 98, 219);
   color: white;
   padding: 10px;
   text-decoration: none;
+  border: 1px solid white;
   align-items: center;
   border-radius: 8px;
 }
 
-.contact a:hover {
+.contact a:hover,
+.res_contact a:hover {
   background-color: white;
   color: rgb(54, 54, 158);
   border: 1px solid rgb(98, 98, 219);
   transition-duration: 200ms;
+}
+/* main scetion  */
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .left {
@@ -122,4 +134,61 @@ main {
   width: 40vw;
   margin-right: 50px;
   margin-top: 50px;
+}
+/* mobile style  */
+.smallmenu {
+  display: none;
+  background-color: white;
+  padding: 10px 40px;
+  height: 100%;
+}
+.humberger {
+  display: none;
+  font-size: 32px;
+  font-weight: 600;
+  color: #3c2e60;
+  z-index: 20;
+}
+@media (max-width: 1024px) {
+  .menu {
+    display: none;
+  }
+  .contact {
+    display: none;
+  }
+  .smallmenu {
+    display: block;
+    position: absolute;
+    left: -500px;
+    top: 0px;
+    transition: all 500ms ease-out;
+    z-index: 10;
+    box-shadow: 0px 2px 12px 0px rgb(57, 143, 201);
+  }
+  .humberger {
+    display: block;
+  }
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: space-around;
+    text-align: center;
+  }
+  .left {
+    place-items: center;
+    padding-bottom: 40px;
+    width: 100%;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  .right {
+    margin: 48px 10px;
+    padding: 12px;
+  }
+  .right img {
+    margin: 0px;
+    width: 62vw;
+    z-index: -20;
+  }
 }

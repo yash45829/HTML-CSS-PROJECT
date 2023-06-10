@@ -1,128 +1,163 @@
-*{
-    margin: 0;
-    padding: 0%;
-    font-family: poppins;
-    max-height: 100vh;
-    
-}
-body{
-    background-image: url(./assets/pexels-maxyne-barcel-10402282\ 1.png) ;
-    background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, 0.582);
-    z-index: 5;
-    background-blend-mode: color;
-    max-height: 100vh;
-    /* min-height: 100vh; */
-    background-size: cover;
+* {
+  margin: 0;
+  padding: 0%;
+  font-family: poppins;
 
 }
-header{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 2vh;
-
+body {
+  background-image: url(./assets/pexels-maxyne-barcel-10402282\ 1.png);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.582);
+  z-index: 5;
+  background-blend-mode: color;
+  background-size: cover;
 }
-.logo{
-    height:8% ;
-    width: 8%;
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2vh;
 }
-
-.logo  img{
-    height: 100%;
-    width: 100%;
-}
-
-.menu ul{
-    display: flex;
-}
-
-.menu ul li{
-    list-style: none;
-    padding: 4px;
-    margin: 20px;
-   
+.logo {
+  height: 8%;
+  width: 8%;
 }
 
-.menu ul li a{
-    color: #ffc233;
-    text-decoration: none;
+.logo img {
+  height: 100%;
+  width: 100%;
 }
 
-.menu ul li a:hover{
-    color: white;
+.menu ul {
+  display: flex;
+}
+.smallmenu ul {
+  display: flex;
+  flex-direction: column;
+}
+.menu ul li,
+.smallmenu ul li {
+  list-style: none;
+  padding: 4px;
+  margin: 20px;
 }
 
-.order  a{
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
-    padding: 10px 30px;
-    margin: 5px;
-    justify-content: center;
-    text-align: center;
-    background-color: #cc3a3a;
-    border-style: none;
+.menu ul li a,
+.smallmenu ul li a {
+  color: #ffc233;
+  text-decoration: none;
 }
 
-.order  a:hover{
-    background-color: white;
-    color: #cc3a3a;
-    transition-duration: 500ms;
-
-}
-main{
-    height: 45vh;
-    
+.menu ul li a:hover,
+.smallmenu ul li a:hover {
+  color: white;
 }
 
-main ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.order a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 30px;
+  margin: 5px;
+  justify-content: center;
+  text-align: center;
+  background-color: #cc3a3a;
+  border-style: none;
 }
 
-main ul li{
-    list-style: none;
+.order a:hover {
+  background-color: white;
+  color: #cc3a3a;
+  transition-duration: 500ms;
+}
+main {
+  height: 45vh;
 }
 
-main ul li p{
-    font-size:74px;
-    margin-top: 10%;
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    font-weight:900;
-    color: #ffc233;
-    padding: 20px;
-
-
+main ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-
-main ul li  a{
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 16px;
-    padding: 10px 30px;
-    margin: 5px;
-    justify-content: center;
-    text-align: center;
-    background-color: rgb(223, 37, 37);
-    border-style: none;
-    
-}
-main ul li  a:hover{
-    background-color: white;
-    color: #cc3a3a;
-    transition-duration: 500ms;
+main ul li {
+  list-style: none;
 }
 
-footer{
-    display: flex;
-    position: fixed;
-    right: 5px;
-    bottom: 5px;
+main ul li p {
+  font-size: 74px;
+  margin-top: 10%;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-weight: 900;
+  color: #ffc233;
+  padding: 20px;
+}
+@media (max-width: 512px) {
+  main ul li p {
+    font-size: 65px;
+  }
+  footer {
+    bottom: 0px;
+  }
+}
+
+main ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 10px 30px;
+  margin: 5px;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(223, 37, 37);
+  border-style: none;
+}
+main ul li a:hover {
+  background-color: white;
+  color: #cc3a3a;
+  transition-duration: 500ms;
+}
+
+footer {
+  display: flex;
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+}
+
+.smallmenu {
+  display: none;
+  background-color: rgb(119, 47, 14);
+  width: 100%;
+}
+.humberger {
+  display: none;
+  color: white;
+  z-index: 20;
+}
+
+@media (max-width: 876px) {
+  .menu {
+    display: none;
+  }
+  .smallmenu {
+    display: block;
+    position: absolute;
+    top: -500px;
+    left: 0px;
+    transition: all 500ms ease-out;
+    box-shadow: 0px 2px 12px 0px rgb(190, 144, 84);
+  }
+  .humberger {
+    display: block;
+  }
+  .logo {
+    height: 12%;
+    width: 12%;
+  }
 }
