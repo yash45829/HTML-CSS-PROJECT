@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medifine</title>
+        <!-- css -->
+        <link rel="stylesheet" href="./beats.css">
+        <!-- font symbols -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- font  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Work+Sans:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- 'sm': '640px',
+        // => @media (min-width: 640px) { ... }
+  
+        'md': '768px',
+        // => @media (min-width: 768px) { ... }
+  
+        'lg': '1024px',
+        // => @media (min-width: 1024px) { ... }
+  
+        'xl': '1280px',
+        // => @media (min-width: 1280px) { ... }
+  
+        '2xl': '1536px',
+        // => @media (min-width: 1536px) { ... } -->
+</head>
+<body class="bg-[#0F0F10] text-white font-[poppins] overflow-x-hidden ">
+    <img class="absolute -z-30 scale-[.70] left-[16%] -top-44" src="./Photos/mainImage.png" alt="">
+    <img class="absolute  scale-[.60] right-[26%] top-36" src="./Photos/onEar.png" alt="">
+    <!-- smallmenu  -->
+
+<header class="flex justify-around place-items-center mt-8  ">
+    <div><img src="./Photos/beatsLogo.png" alt=""></div>
+    <nav class="sm:block hidden">
+        <ul class="flex place-items-center space-x-8 font-semibold">
+            <li><a class="hover:bg-gray-700 py-2 px-2 rounded-lg" href="">Home</a></li>
+            <li><a class="hover:bg-gray-700 py-2 px-2 rounded-lg" href="">Specs</a></li>
+            <li><a class="hover:bg-gray-700 py-2 px-2 rounded-lg" href="">Case</a></li>
+            <li><a class="hover:bg-gray-700 py-2 px-2 rounded-lg" href="">Products</a></li>
+            <button class="px-8 py-2 bg-gray-600 rounded-lg hover:bg-gray-700"><a href="">Shop</a></button>
+        </ul>
+    </nav>
+
+ <!-- mobile responsive -->
+ <!-- humberger -->
+     <div id="humberger" class=" w-4 cursor-pointer sm:hidden duration-500">
+         <i id="symbol" class="fa-solid fa-bars"></i>
+         <!-- <i class="fa-solid fa-xmark"></i> -->
+     </div>
+</header>
+<div id="menu" class="absolute z-20 h-[100%] top-0 -left-[500px] py-4 px-8 bg-gray-900">
+    <ul class="">
+      <li class="my-8"><a class="hover:bg-gray-70  py-2 px-2 rounded-lg" href="">Home</a></li>
+      <li class="my-8"><a class="hover:bg-gray-70  py-2 px-2 rounded-lg" href="">Specs</a></li>
+      <li class="my-8"><a class="hover:bg-gray-70  py-2 px-2 rounded-lg" href="">Case</a></li>
+      <li class="my-8"><a class="hover:bg-gray-70  py-2 px-2 rounded-lg" href="">Products</a></li>
+      <button class="px-8 py-2 bg-gray-600 rounded-lg hover:bg-gray-700"><a href="">Shop</a></button>
+    </ul>
+  </div>
+<main>
+    <!-- beats three ********************************************** -->
+    <section  data-aos-duration="1000" data-aos="fade-down" class=" flex overflow-hidden place-content-center align-top pt-48 ">
+
+        <div class="text-left flex flex-col space-y-8  sm:pl-24 px-auto ">
+        <div class="text-6xl font-semibold">Beats3</div>
+        <div class="text-white">Overview</div>
+        <div class="text-gray-400 text-[0.9rem]">Enjoy award-winning Beats sound with wireless listening <br>
+            freedom and a sleek, streamlined design with <br>
+            comfortable padded earphones, delivering first-rate <br>
+            playback</div>
+        <button class="flex space-x-2 bg-gray-600 py-2 px-4 w-fit rounded-lg hover:bg-gray-700">
+            <img src="./Icons/shoppingBag.png" alt=""> <p class="text-sm">Add to Bag <span class="text-[1rem] font-semibold">9399K</span></p>
+        </button>
+    </div>
+    </section>
+    <!-- / beats three *********************************************-->
+
+    <!-- brand name *********************************************-->
+    <section class=" py-12" >
+        <ul class="flex flex-wrap justify-evenly place-items-center">
+            <li class="m-2"><a href=""><img src="./Photos/appleLogo.png" alt=""></a></li>
+            <li class="m-2"><a href=""><img src="./Photos/spotifyLogo.png" alt=""></a></li>
+            <li class="m-2"><a href=""><img src="./Photos/amazonLogo.png" alt=""></a></li>
+            <li class="m-2"><a href=""><img src="./Photos/youtubeLogo.png" alt=""></a></li>
+         
+        </ul>
+    </section>
+    <!-- / brand name *********************************************-->
+        <!-- specs  -->
+    <section data-aos="fade-right" class="flex overflow-hidden flex-col  justify-around place-items-center">
+        <div class="my-4"><img src="./Icons/specsLogo.png" alt=""></div>
+        <div class="flex sm:flex-row flex-col-reverse justify-center place-items-center w-fit">
+        <div class="flex flex-wrap justify-around place-items-center space-x-2  sm:flex-col" >
+            <div class=" w-fit my-4">
+                <img class="pb-1" src="./Icons/bluetooth.png" alt="">
+                <p>Connection <br>
+                <span class="text-gray-400 text-sm">Bluetooth v5.2</span></p> 
+            </div>
+            <div class=" w-fit my-4 sm:-translate-x-16">
+                <img class="pb-1" src="./Icons/battery.png" alt="">
+                <p>Battery <br>
+                <span class="text-gray-400 text-sm">Duration 40h</span></p> 
+            </div>
+            <div class=" w-fit my-4 sm:-translate-x-16">
+                <img class="pb-1" src="./Icons/charger.png" alt="">
+                <p>Load <br>
+                <span class="text-gray-400 text-sm">Load Fast Charge <br> 4.2-AAC</span></p> 
+            </div>
+            <div class=" w-fit my-4">
+                <img class="pb-1" src="./Icons/mic.png" alt="">
+                <p>Microphone <br>
+                <span class="text-gray-400 text-sm">Supports Apple <br> Siri and Google</span></p> 
+            </div>
+        </div>
+        <div><img src="./Photos/specsImage.png" alt=""></div>
+       </div>
+    </section>
+        <!-- / specs  -->
+
+    <!-- case ********************************************* -->
+    <section data-aos="fade-left" class="flex flex-col overflow-hidden justify-center place-items-center">
+        <div class="mt-8"><img src="Icons/caseLogo.png" alt=""></div>
+        <div class=" sm:flex-row flex-col justify-center place-items-center text-left space-x-12">
+        <div><img class="scale-[0.8]" src="./Photos/caseImage.png" alt=""></div>
+        <div><p>With a comfortable and<br>
+            adaptable case so that you<br>
+            can store it whenever you
+         <br> want, and keep your durability<br>
+            forever.
+            
+            </p>
+        <button class="flex space-x-4 bg-gray-600 py-2 px-4 w-fit my-4 rounded-lg hover:bg-gray-700 " ><img src="./Icons/group.png" alt=""><p>More Information</p></button>
+        </div>
+        </div>
+    </section>
+    <!-- / case  -->
+
+    <!-- buy box  *********************************************-->
+    <section data-aos="fade-right" class="flex md:flex-row overflow-hidden  flex-col-reverse md:space-x-12 my-8 md:justify-center justify-around md:place-items-center place-items-center bg-[#1E1E21] md:w-[80%]  md:py-12 py-4   rounded-xl  mx-auto">
+        <!-- left  -->
+        <div class="text-left   text-base ">
+            <p>Immense yourself in your <br>
+            music </p>
+           <p class="my-4  text-gray-400 text-[0.9rem]"> Buy Now, up to 40% off.</p>
+            <button class="flex space-x-2 bg-black py-2 px-4 w-fit rounded-lg hover:bg-gray-700"><img src="./Icons/shoppingBag.png" alt=""><p class="text-[0.9rem]">Buy Now</p></button>
+        </div>
+        <!-- right  -->
+        <div class=" mb-8"><img class=" " src="./Photos/buyNowSectionImage.png" alt=""></div>
+    </section>  
+    <!-- / buy box  -->
+    
+    <!-- choose your style  ********************************************* -->
+    
+    <section data-aos="fade-left" class="flex overflow-hidden flex-col justify-center place-items-center">
+        <img class="scale-50 mb-16" src="./Icons/productLogo.png" alt="">
+
+        <div class="flex flex-wrap    justify-center place-items-center 
+         sm:w-[40%] w-[50%]">
+        <!-- card 1 -->
+        <div class=" flex flex-col py-2 px-4 m-2 mb-24 bg-[#1E1E21] h-32 space-y-2 rounded-lg justify-end place-items-center">
+            <img class="w-28 " src="./Photos/black.png" alt="">
+            <div class="flex justify-around place-items-center space-x-4">
+                <p class="text-[0.8rem]">Black <br> <span>N288K</span></p>
+                <img class="bg-black scale-90 rounded-lg p-2 " src="./Icons/shoppingBag.png" alt="">
+            </div>
+        </div>
+        <!-- card 2 -->
+        <div class=" flex flex-col py-2 px-4 m-2 mb-24  bg-[#1E1E21] h-32 space-y-2 rounded-lg justify-end place-items-center">
+            <img class="w-28 " src="./Photos/redBlack.png" alt="">
+            <div class="flex justify-around place-items-center space-x-4">
+                <p class="text-[0.8rem]">Black <br> <span>N288K</span></p>
+                <img class="bg-black scale-90 rounded-lg p-2 " src="./Icons/shoppingBag.png" alt="">
+            </div>
+        </div>
+        <!-- card 3 -->
+        <div class=" flex flex-col py-2 px-4 m-2 mb-24 bg-[#1E1E21] h-32 space-y-2 rounded-lg justify-end place-items-center">
+            <img class="w-28 " src="./Photos/nightBlack.png" alt="">
+            <div class="flex justify-around place-items-center space-x-4">
+                <p class="text-[0.8rem]">Black <br> <span>N288K</span></p>
+                <img class="bg-black scale-90 rounded-lg p-2 " src="./Icons/shoppingBag.png" alt="">
+            </div>
+        </div>
+        <!-- card 4 -->
+        <div class=" flex flex-col py-2 px-4 m-2 mb-24  bg-[#1E1E21] h-32 space-y-2 rounded-lg justify-end place-items-center">
+            <img class="w-28 " src="./Photos/blue.png" alt="">
+            <div class="flex justify-around place-items-center space-x-4">
+                <p class="text-[0.8rem]">Black <br> <span>N288K</span></p>
+                <img class="bg-black scale-90 rounded-lg p-2 " src="./Icons/shoppingBag.png" alt="">
+            </div>
+        </div>
+        <!-- card 5 -->
+        <div class=" flex flex-col py-2 px-4 m-2 mb-24  bg-[#1E1E21] h-32 space-y-2 rounded-lg justify-end place-items-center">
+            <img class="w-28 " src="./Photos/twilightGray.png" alt="">
+            <div class="flex justify-around place-items-center space-x-4">
+                <p class="text-[0.8rem]">Black <br> <span>N288K</span></p>
+                <img class="bg-black scale-90 rounded-lg p-2 " src="./Icons/shoppingBag.png" alt="">
+            </div>
+        </div>
+        
+        
+        </div>
+    </section>
+    <!-- / choose your style  -->
+
+</main>
+ 
+ <!-- footer ********************************************* -->
+    <footer class="flex justify-evenly place-items-start py-16 ">
+      <!-- logo image  -->
+        <div class=" hidden sm:block cursor-pointer"><img src="./Photos/beatsLogo.png" alt="" /></div>
+        <!-- table menu  -->
+        <table class="hidden sm:block">
+          <thead class="  ">
+            <tr>
+              <td class="py-2 px-2">Products</td>
+              <td class="py-2 px-2" >Support</td>
+            </tr>
+          </thead>
+          <tbody class="text-gray-400  text-[0.8rem]">
+            <tr>
+              <td class="cursor-pointer hover:text-gray-200 py-1 px-2">Headphones</td>
+              <td class="cursor-pointer hover:text-gray-200 py-1 px-2">Product Help</td>
+            </tr>
+            <tr>
+              <td class="cursor-pointer hover:text-gray-200 py-1 px-2">Earphones</td>
+              <td class="cursor-pointer hover:text-gray-200 py-1 px-2">Register</td>
+            </tr>
+            <tr>
+              <td class="cursor-pointer hover:text-gray-200 py-1 px-2">Earbuds</td>
+              <td class="cursor-pointer hover:text-gray-200 py-1 px-2">Updates</td>
+            </tr>
+            <tr>
+              <td class="cursor-pointer hover:text-gray-200 py-1 px-2">Accessories</td>
+              <td class="cursor-pointer hover:text-gray-200 py-1 px-2">Provides</td>
+            </tr>
+          </tbody>
+        </table>
+      
+      
+      <!-- social -->
+      <div class="flex flex-col justify-around place-items-start">
+        <!-- form -->
+        <div class="flex flex-wrap  justify-center  place-items-center rounded-lg sm:space-y-0 py-2 px-4 bg-[#1E1E21] ">
+          <input class="bg-[#1E1E21] my-2  -none  focus:outline-none focus:drop-shadow-lg shadow-zinc-200" type="email" placeholder="Email" name="" id="" />
+          <button  class="flex place-items-center space-x-2 bg-black py-2 px-4 w-fit rounded-lg hover:bg-gray-700"><img src="./Icons/rightArrow.png" alt="" /> <p>Subscribe</p> </button>
+        </div>
+        <!-- apps  -->
+        <div class="flex p-4 space-x-8 pl-0 ">
+          <img class="cursor-pointer hover:scale-[1.2] " src="./Icons/facebook.png" alt="" />
+          <img class="cursor-pointer hover:scale-[1.2] " src="./Icons/twitter.png" alt="" />
+          <img class="cursor-pointer hover:scale-[1.2] " src="./Icons/instagram.png" alt="" />
+          <img class="cursor-pointer hover:scale-[1.2] " src="./Icons/linkedin.png" alt="" />
+        </div>
+      </div>
+      <!-- scroll to top  -->
+      <img id="scroll" class="hidden cursor-pointer sm:block hover:scale-[1.2]" src="./Icons/upArrow.png" alt="" />
+    </footer>
+    <!-- responsive footer  -->
+    <div class="flex justify-around place-items-start py-8 ">
+      <div class="footlogo sm:hidden cursor-pointer pt-2"><img src="./Photos/beatsLogo.png" alt="" /></div>
+    <table class="sm:hidden  text-lg  mx-[2rem]">
+        <thead class="  ">
+          <tr>
+            <td class="cursor-pointer py-2 px-2">Products</td>
+            <td class="cursor-pointer py-2 px-2" >Support</td>
+          </tr>
+        </thead>
+        <tbody class="text-gray-400 text-[0.8rem]">
+          <tr>
+            <td class="cursor-pointer py-1 px-2">Headphones</td>
+            <td class="cursor-pointer py-1 px-2">Product Help</td>
+          </tr>
+          <tr>
+            <td class="cursor-pointer py-1 px-2">Earphones</td>
+            <td class="cursor-pointer py-1 px-2">Register</td>
+          </tr>
+          <tr>
+            <td class="cursor-pointer py-1 px-2">Earbuds</td>
+            <td class="cursor-pointer py-1 px-2">Updates</td>
+          </tr>
+          <tr>
+            <td class="cursor-pointer py-1 px-2">Accessories</td>
+            <td class="cursor-pointer py-1 px-2">Provides</td>
+          </tr>
+        </tbody>
+      </table>
+      <img id="mobilescroll" class=" sm:hidden my-2 cursor-pointer hover:scale-[1.2]" src="./Icons/upArrow.png" alt="" />
+    </div>
+    <!-- / responsive footer  -->
+
+    
+     <!-- script ********************************************* -->
+     <script>
+        // navbar responsive
+        const humberger = document.getElementById("humberger");
+        const menu = document.getElementById("menu");
+        const symbol = document.getElementById("symbol");
+  
+        humberger.addEventListener("click", () => {
+          if (symbol.classList[1] == "fa-bars") {
+            symbol.classList = "fa-solid fa-xmark";
+            menu.style.left = `0px`;
+            menu.style.transitionDuration = `500ms`
+
+          } else {
+            symbol.classList = "fa-solid fa-bars";
+            menu.style.left = `-500px`;
+            menu.style.transitionDuration = `500ms`
+
+          }
+        })
+
+        // scroll to top 
+         let scroll = document.getElementById("scroll");
+         let mobilescroll = document.getElementById("mobilescroll");
+         scroll.addEventListener("click",scrollToTop)
+         
+         mobilescroll.addEventListener('click',scrollToTop)
+           function scrollToTop(){
+            document.body.scrollTop = 0; // For Safar
+         console.log("clicked")
+         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+           }
+        //  navbar disappear in mobile responsive on scroll 
+        let prevScrollpos = window.pageYOffset;
+        window.onscroll = function() { 
+        let currentScrollPos = window.pageYOffset;
+        if (prevScrollpos < currentScrollPos && menu.style.left == `0px` ) {
+        menu.style.left = `-500px`;
+        symbol.classList = "fa-solid fa-bars";
+        menu.style.transitionDuration = `2000ms`
+        }else{
+          
+        }
+        prevScrollpos = currentScrollPos;
+      }
+    </script>
+
+      <!-- animation on scroll library  -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init(
+          { offset: 400,
+            duration: 700,
+           }
+        );
+      </script>
+
+</body>
+</html>

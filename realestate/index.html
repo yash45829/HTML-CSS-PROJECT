@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title  -->
+    <title>Real Estate</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./realstate.css">
+    <!-- font symbols -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Work+Sans:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="font-[Poppins] m-0 p-0">
+     
+     <!-- Breakpoints :
+                    sm: 640px
+                    md: 876px 
+     -->
+    <!-- Landing page  -->
+    <header class=" bg-mainimage h-fit w-full bg-cover bg-black/40  border border-black bg-blend-color">
+       
+        <!-- navbar  -->
+        <nav class="border-b-2 border-b-white font-[Poppins] w-[85vw] flex  md:flex justify-between place-items-center mx-auto  py-8 sm:px-16 ">
+
+            <img class="h-12 " src="./assets2/Icons/Logo.svg" alt="" srcset="">
+            <!-- links  -->
+            <div >
+            <ul class="md:flex hidden space-x-4">
+                <li><a class="text-white text-xl hover:text-gray-400" href="">Location</a></li>
+                <li><a class="text-white text-xl hover:text-gray-400" href="">Blogs</a></li>
+                <li><a class="text-white text-xl hover:text-gray-400" href="">Testimonials</a></li>
+                <li><a class="text-white text-xl hover:text-gray-400" href="">Contact</a></li>
+            </ul>
+            </div>
+              <!-- mobile responsive -->
+             <div id="humberger" class="md:hidden text-2xl text-white 
+              focus:select-none hover:cursor-pointer select-none z-50">
+            <i id="symbol" class="fa-solid fa-bars"></i>
+            <!-- <i class="fa-solid fa-xmark"></i> -->
+        </div>
+
+        <div id="menu" class=" hidden absolute top-0 right-0 py-1 md:hidden  w-full z-40 bg-indigo-400 rounded-xl shadow-md drop-shadow-md">
+            <ul class="flex  flex-col  justify-between place-items-center space-y-4 ">
+                <li><a class="text-xl text-white hover:text-emerald-700 ease-in duration-200 border-b-2  border-b-white" href="">Location</a></li>
+                <li><a class="text-xl text-white hover:text-emerald-700 ease-in duration-200 border-b-2 border-b-white" href="">Blogs</a></li>
+                <li><a class="text-xl text-white hover:text-emerald-700 ease-in duration-200 border-b-2 border-b-white" href="">Testimonials</a></li>
+                <li><a class="text-xl text-white hover:text-emerald-700 ease-in duration-200 border-b-2 border-b-white" href="">Contact</a></li>
+                
+
+            </ul>
+        </div>
+    
+    </nav>
+    
+     <!-- Hero section-->
+
+        <main class=" w-[85vw] py-10 pt-16  mb-28 px-8 text-white mx-auto  sm:text-left text-center "> 
+            <!-- heading -->
+            <div class="font-semibold md:text-[4.2rem] text-[2.8rem] text-white tracking-wide  my-2">
+                Home That Makes <br>
+                You Living Life!
+            </div>
+            <!-- para content -->
+            <p class="text-xl font-[Poppins]">Are you looking for amazing Real estate? Don't <br>
+                worry! we got it for you</p>
+            <!-- button  -->
+             <div class="mt-8"><button class="bg-purple-500 focus:select-none hover:bg-purple-600 text-[20px] font-semibold py-2 px-4 hover:select-none rounded-full ">Learn More</button></div>
+        </main>
+    </header>
+ <!-- scroll screen  -->
+    <main class="bg-sky-100">
+        <!-- logo section  -->
+        <section class=" mx-8 bg-white flex flex-wrap z-50 -translate-y-12  rounded-xl justify-around place-items-center py-8 space-x-4 ">
+         <img class="p-2 h-8 sm:h-12 md:h-auto" src="./assets2/Icons/logoName.svg" alt="" srcset="">
+         <img class="p-2 h-8 sm:h-12 md:h-auto" src="./assets2/Icons/logoName.svg" alt="" srcset="">
+         <img class="p-2 h-8 sm:h-12 md:h-auto" src="./assets2/Icons/logoName.svg" alt="" srcset="">
+         <img class="p-2 h-8 sm:h-12 md:h-auto" src="./assets2/Icons/logoName.svg" alt="" srcset="">
+         <img class="p-2 h-8 sm:h-12 md:h-auto" src="./assets2/Icons/logoName.svg" alt="" srcset="">
+         
+        </section>
+      <!-- ************************************************ -->
+        <!-- cards section -->
+        <section >
+            <!-- heading  -->
+            <div class="text-6xl font-bold text-center mt-8 ">Our Best Estate,<br>
+                are Modern!</div>
+                
+               <div class="flex flex-wrap justify-around place-items-center my-28">
+               
+               <!-- card 1 -->
+                <div class="relative mx-4 my-28 "><img class=" w-[22rem] h-[28rem] rounded-[20px] " src="./assets2/Photos/cardImage1.png" alt="image1" srcset="">
+                  <div class="w-[90%] font-semibold space-x-4 bg-white rounded-[20px] flex justify-around place-items-center py-4 px-8 absolute left-6 -bottom-12"><p class="flex flex-col text-center text-2xl ">Mixtownia <span class="text-purple-500">$205,500</span></p><button class="bg-purple-500 hover:bg-purple-600 text-[20px] font-semibold py-2 px-4 rounded-full">Detail</button></div></div>     
+               
+                  <!-- card 2 -->
+                  <div class="relative mx-4 my-28"><img class="w-[22rem] h-[28rem] rounded-[20px] " src="./assets2/Photos/cardImage2.png" alt="image1" srcset=""><div class="w-[90%]  font-semibold space-x-4 bg-white rounded-[20px] flex justify-around place-items-center py-4 px-8 absolute left-6 -bottom-12"><p class="flex flex-col text-center text-2xl ">Mixtownia <span class="text-purple-500">$205,500</span></p><button class="bg-purple-500 hover:bg-purple-600 text-[20px] font-semibold py-2 px-4 rounded-full">Detail</button></div></div>  
+
+                    <!-- card 3-->
+                <div class="relative mx-4 my-28"><img class="w-[22rem] h-[28rem] rounded-[20px] " src="./assets2/Photos/cardImage3.png" alt="image1" srcset=""><div class="w-[90%]  font-semibold space-x-4 bg-white rounded-[20px] flex justify-around place-items-center py-4 px-8 absolute left-6 -bottom-12"><p class="flex flex-col text-center text-2xl ">Mixtownia <span class="text-purple-500">$205,500</span></p><button class="bg-purple-500 hover:bg-purple-600 text-[20px] font-semibold py-2 px-4 rounded-full">Detail</button></div></div>  
+
+                  <!-- card 4 -->
+                  <div class="relative mx-4 my-28"><img class="w-[22rem] h-[28rem] rounded-[20px] " src="./assets2/Photos/cardImage4.png" alt="image1" srcset=""><div class="w-[90%]  font-semibold space-x-4 bg-white rounded-[20px] flex justify-around place-items-center py-4 px-8 absolute left-6 -bottom-12"><p class="flex flex-col text-center text-2xl ">Mixtownia <span class="text-purple-500">$205,500</span></p><button class="bg-purple-500 hover:bg-purple-600 text-[20px] font-semibold py-2 px-4 rounded-full">Detail</button></div></div>  
+
+                    <!-- card 5 -->
+                <div class="relative mx-4 my-28"><img class="w-[22rem] h-[28rem] rounded-[20px] " src="./assets2/Photos/cardImage5.png" alt="image1" srcset=""><div class="w-[90%]  font-semibold space-x-4 bg-white rounded-[20px] flex justify-around place-items-center py-4 px-8 absolute left-6 -bottom-12"><p class="flex flex-col text-center text-2xl ">Mixtownia <span class="text-purple-500">$205,500</span></p><button class="bg-purple-500 hover:bg-purple-600 text-[20px] font-semibold py-2 px-4 rounded-full">Detail</button></div></div>  
+
+                  <!-- card 6 -->
+                  <div class="relative mx-4 my-28"><img class="w-[22rem] h-[28rem] rounded-[20px] " src="./assets2/Photos/cardImage6.png" alt="image1" srcset=""><div class="w-[90%] font-semibold space-x-4 bg-white rounded-[20px] flex justify-around place-items-center py-4 px-8 absolute left-6 -bottom-12"><p class="flex flex-col text-center text-2xl ">Mixtownia <span class="text-purple-500">$205,500</span></p><button class="bg-purple-500 hover:bg-purple-600 text-[20px] font-semibold py-2 px-4 rounded-full">Detail</button></div></div>  
+                  
+                    <!-- card 7 -->
+                <div class="relative mx-4 my-28"><img class="w-[22rem] h-[28rem] rounded-[20px] " src="./assets2/Photos/cardImage7.png" alt="image1" srcset=""><div class="w-[90%]  font-semibold space-x-4 bg-white rounded-[20px] flex justify-around place-items-center py-4 px-8 absolute left-6 -bottom-12"><p class="flex flex-col text-center text-2xl ">Mixtownia <span class="text-purple-500">$205,500</span></p><button class="bg-purple-500 hover:bg-purple-600 text-[20px] font-semibold py-2 px-4 rounded-full">Detail</button></div></div>  
+
+                  <!-- card 8 -->
+                  <div class="relative mx-4 my-28"><img class="w-[22rem] h-[28rem] rounded-[20px] " src="./assets2/Photos/cardImage8.png" alt="image1" srcset=""><div class="w-[90%]  font-semibold space-x-4 bg-white rounded-[20px] flex justify-around place-items-center py-4 px-8 absolute left-6 -bottom-12"><p class="flex flex-col text-center text-2xl ">Mixtownia <span class="text-purple-500">$205,500</span></p><button class="bg-purple-500 hover:bg-purple-600 text-[20px] font-semibold py-2 px-4 rounded-full">Detail</button></div></div>  
+
+                    <!-- card 9 -->
+                <div class="relative mx-4 my-28"><img class="w-[22rem] h-[28rem] rounded-[20px] " src="./assets2/Photos/cardImage9.png" alt="image1" srcset=""><div class="w-[90%]  font-semibold space-x-4 bg-white rounded-[20px] flex justify-around place-items-center py-4 px-8 absolute left-6 -bottom-12"><p class="flex flex-col text-center text-2xl ">Mixtownia <span class="text-purple-500">$205,500</span></p><button class="bg-purple-500 hover:bg-purple-600 text-[20px] font-semibold py-2 px-4 rounded-full">Detail</button></div></div>  
+               
+            </div>
+
+        </section>
+
+      <!-- ************************************************ -->
+
+        <!-- feature 1 -->
+        <section class=" flex md:flex-row md:justify-around  bg-sky-200 md:place-items-center flex-col place-items-start justify-around my-12 p-0 ">
+            <!-- left  -->
+            <div class=" m-0 relative w-fit ">
+                <img class="" src="./assets2/Icons/featureImageBg1.svg" alt="">
+                <img class="h-[75%] w-[60%] absolute left-[20%] top-[8%] rounded-[40px]" src="./assets2/Photos/featuresImage1.png" alt="">
+            </div>
+            <!-- right -->
+            <div class="sm:text-left text-center  px-8  py-8">
+                <div class="md:text-[3.5rem] text-[3.20rem] font-semibold  leading-normal mb-4">Modern, Trendy, <br>
+                    Affordable</div>
+                <p class="sm:text-xl mb-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Dolorem quo rem officia nisi exercitationem porro?</p>
+                <button class="bg-purple-500 hover:bg-purple-600 text-[20px] font-semibold py-2 px-4 rounded-full" >Early Bird book</button>
+            </div>
+        </section>
+        <!-- feature 2 -->
+        <section class="flex md:flex-row md:justify-around md:place-items-center flex-col-reverse place-items-end justify-around my-12 md:m-0 md:p-0 bg-sky-200 ">
+                 <!-- left -->
+                 <div class="sm:text-left text-center px-8 py-8">
+                    <div class="md:text-[3.5rem] text-[3.20rem] font-semibold mb-4 leading-normal ">Unique House <br>
+                        for Long Term!</div>
+                    <p class="sm:text-xl mb-4">
+                        
+                        Lorem ipsum dolor sit amet consectetur adipisicing <br>
+                        elit. Dolorem quo rem officia nisi exercitationem <br>
+                        porro?</p>
+                    <button class="bg-purple-500 hover:bg-purple-600 text-[20px] font-semibold py-2 px-4 rounded-full" >Early Bird book</button>
+                </div>
+            <!-- right  -->
+            <div class=" md:scale-100  m-0 p-0  relative w-fit  ">
+                <img class=" left-0 top-0 " src="./assets2/Icons/featureImageBg2.png" alt="">
+                <img class="h-[75%] w-[60%] absolute left-[20%] top-[8%]  m-0 rounded-[40px]" src="./assets2/Photos/featuresImage2.png " alt="">
+            </div>
+       
+        </section>
+
+      <!-- ************************************************ -->
+
+        <!-- contact block  -->
+        <section class="bg-[#6663e9] my-40 container mx-auto border  rounded-[4rem] sm:p-24 p-10 text-center"> 
+            <div class="md:text-[3.5rem] text-white sm:text-[3.20rem] text-4xl font-semibold mb-4 leading-normal">
+                Subscribe to Our Newsletter <br>
+                For Weekly Article Update.
+            </div>
+            <div class="sm:text-xl mb-4 text-white font-light">We have real estate-related blog so we can share our thoughts   and rutinity in <br>our blog that updated weekly. We will not spam you, we promise.</div>
+            <div class="flex sm:flex-row sm:space-x-8 flex-col justify-around  sm:justify-center sm:space-y-0 place-items-center space-y-4">
+              <!-- input box  -->
+                <div class="flex  py-4 px-8 bg-[#3f3cea] sm:mx-4 w-fit  rounded-full  space-x-4">
+                    <img src="./assets2/Icons/mail.png" alt="" srcset="">
+                    <input class="py-1 px-4 rounded-3xl sm:w-[16vw] w-[80%] text-[16px]  border-none sm:mx-8 mx-4 focus:border-none" type="text" name="email" id="email" placeholder="Enter Your Email">
+                </div>
+                <!-- button  -->
+                <button class="bg-white text-[#6663e9]  select-none hover:bg-slate-200 text-[20px] font-semibold py-3 px-4 rounded-full">Subscribe</button>
+            </div>
+        </section>
+    </main>
+      <!-- ************************************************ -->
+
+    <!-- footer  -->
+    <footer class="flex md:flex-row bg-sky-100  justify-around place-items-start py-8 
+    flex-col  "> 
+
+
+            <!-- left side footer  -->
+            <div class="text-left sm:ml-12 ml-4">
+
+            <div class="my-4"><img src="./assets2/Icons/Logo.svg" alt="" srcset=""></div>
+
+            <div class="flex">
+            <img class="my-4 mx-4 hover:scale-110 ease-out duration-100 hover:cursor-pointer" src="./assets2/Icons/facebook.png" alt="" srcset="">
+            <img class="my-4 mx-4 hover:scale-110 ease-out duration-100 hover:cursor-pointer" src="./assets2/Icons/twitter.png" alt="" srcset="">
+            <img class="my-4 mx-4 hover:scale-110 eas-in duration-100 hoverr:cursor-pointer" src="./assets2/Icons/instagram.png" alt="" srcset="">
+            </div>
+            <div class="text-left text-[20px] my-4">2022 Award winning Real estate <br>
+                and Lorem ipsum dolor sit amet</div>
+        </div>
+       
+            <!-- rightside footer  -->
+        <div class=" text-xl">
+            <table class="ml-4">
+                <!-- table heading  -->
+              <thead class="font-semibold my-4">
+                <tr class="">
+                  <td class="py-2 sm:px-8 px-[1vw]">Location</td>
+                  <td class="py-2 sm:px-8 px-[1vw]">Contact</td>
+                  <td class="py-2 sm:px-8 px-[1vw]">Legals</td>
+                </tr>
+              </thead>
+              <tbody class=" text-[16px] my-4">
+                <tr>
+                  <td class="py-2 sm:px-8 px-[1vw]">America</td>
+                  <td class="py-2 sm:px-8 px-[1vw]">About Me</td>
+                  <td class="py-2 sm:px-8 px-[1vw]">Privacy</td>
+                </tr>
+                <tr>
+                  <td class="py-2 sm:px-8 px-[1vw]">Asia</td>
+                  <td class="py-2 sm:px-8 px-[1vw]">Teams</td>
+                  <td class="py-2 sm:px-8 px-[1vw]">Disclaimer</td>
+                </tr>
+                <tr>
+                  <td class="py-2 sm:px-8 px-[1vw]">Europe</td>
+                  <td class="py-2 sm:px-8 px-[1vw]">Profile</td>
+                  <td class="py-2 sm:px-8 px-[1vw]">Terms</td>
+                </tr>
+                <tr>
+                  <td class="py-2 sm:px-8 px-[1vw]">Africa</td>
+                  <td class="py-2 sm:px-8 px-[1vw]">FAQ</td>
+                  <td class="py-2 sm:px-8 px-[1vw]">Company</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+    </footer>
+
+    <script>
+        // navbar responsive 
+        const humberger = document.getElementById("humberger")
+        const menu = document.getElementById("menu")
+        const symbol = document.getElementById("symbol")
+       
+        humberger.addEventListener( 'click' , ()=>{
+            menu.classList.toggle("hidden");
+           if( symbol.classList[1] == "fa-bars"){
+            symbol.classList="fa-solid fa-xmark"
+           }else{
+            symbol.classList="fa-solid fa-bars"
+           }
+    
+        })
+      </script>
+</body>
+</html>
